@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main(void)
+{
+ int numero,i,soma=0,limite;
+  float media;
+  printf("qual a qtd que voce deseja? ");
+  scanf("%d",&limite);
+  for (i=1;i<=limite;i++)
+    {  
+      printf("\ninforme um número %d: ",i);
+      scanf("%d",&numero);
+      printf("\n numero %d:  \n",numero);
+      soma = soma + numero;
+    }
+  printf("\n valor de soma %d: ", soma);
+  media=soma/limite;
+  printf("\nMedia doas valores informados %.2f",media);
+  return 0;
+}
